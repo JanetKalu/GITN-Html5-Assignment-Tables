@@ -5,14 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML5 Table</title>
     <style>
-        table {
-            border: 2px solid black;
-            +border-collapse: collapse;
-            
-        }
-        tr th {
+        body {
             background-color: gainsboro;
         }
+        
+        h1 {
+            color: rgb(86, 36, 134);
+            text-align: center;
+            
+        }
+        
+        h2 {
+            color: deeppink;
+        }
+
+        small {
+            color: red;
+        }
+        
+        table {
+            background-color: rgb(117, 154, 42);
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-decoration-color: red;
+            border-radius: 5px;
+            
+            
+        }
+
+        thead tr th {
+            background-color: blueviolet;
+        
+        
+        }
+
+        tr, th, td {
+            border: 1px solid ;
+            border-collapse: collapse;
+            padding: 3px;
+        
+        
+            
+        }
+
+
+        tbody tr:nth-child(even) {
+            background-color: paleturquoise;
+
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: rgb(245, 240, 240);
+
+        }
+        
     </style>
 </head>
 <body>
@@ -27,7 +73,13 @@
                     <th>Category</th>
                     <th>Features</th>
                     <th>Quantity In Stock</th>
-                    <th>Unit Price</th>
+                    <th>
+                        
+                        <strike style="color: red;">
+                            <span style="color: black;">Unit Price</span>
+
+                        </strike>
+                    </th>
                     <th>Promo Price</th>
                 </tr>
             </thead>
@@ -38,7 +90,12 @@
                     <td>Tomato Paste</td>
                     <td>Contains tomato, pepper, onion, soy. 70<sub>g</sub></td>
                     <td>500</td>
-                    <td><strike>&#x20A6;200.00</strike></td>
+                    <td>
+                        <strike style="color: red;">
+                            <span style="color: black;">&#x20A6;200.00</span>
+
+                        </strike>
+                    </td>
             
                     <td>&#x20A6;160.00</td>
             
@@ -47,9 +104,14 @@
                     <td>LYLT051</td>
                     <td>Lipton Yellow Label Tea</td>
                     <td>Tea</td>
-                    <td>Contains 25 teabags black tea, 50<sub>g</sub></td>
+                    <td>Contains 25 black tea teabags, 50<sub>g</sub></td>
                     <td>100</td>
-                    <td><strike>&#x20A6;500.00</strike></td>
+                    <td>
+                        <strike style="color: red;">
+                            <span style="color: black;">&#x20A6;500.00</span>
+
+                        </strike>
+                    </td>
                     <td>&#x20A6;400.00</td>
             
                 </tr>
@@ -59,7 +121,12 @@
                     <td>Ketchup</td>
                     <td>All natural tomato ketchup, 500<sub>g</sub></td>
                     <td>20</td>
-                    <td><strike>&#x20A6;1,200.00</strike></td>
+                    <td>
+                        <strike style="color: red;">
+                            <span style="color: black;">&#x20A6;1,200.00</span>
+
+                        </strike>
+                    </td>
                     <td>&#x20A6;960.00</td>
             
                 </tr>
@@ -69,10 +136,31 @@
                     <td>Dairy</td>
                     <td>Instant filled milk powder enriched with Vitamin A+D, protein, calcium. 320<sub>g</sub></td>
                     <td>50</td>
-                    <td><strike>&#x20A6;2,800.00</strike></td>
+                    <td>
+                        <strike style="color: red;">
+                            <span style="color: black;">&#x20A6;2,800.00</span>
+
+                        </strike>
+                    </td>
                     <td>&#x20A6;2,240.00</td>
             
                 </tr>
+                <tr>
+                    <td>BKB003</td>
+                    <td>Bokku Bread</td>
+                    <td>Bread</td>
+                    <td>Freshly baked bread enriched with fibre, vitamins, and energy. 800<sub>g</sub></td>
+                    <td>50</td>
+                    <td>
+                        <strike style="color: red;">
+                            <span style="color: black;">&#x20A6;1,400.00</span>
+
+                        </strike>
+                    </td>
+                    <td>&#x20A6;1,080.00</td>
+            
+                </tr>
+
 
 
 
